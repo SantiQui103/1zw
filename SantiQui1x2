@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <title>Tegnologia</title>
+        <script>
+            function inicio(){
+
+            let seccionhtml = document.getElementById('seccionHTML')
+                seccionhtml.style.display = "none"
+            let verseccioncss = document.getElementById('seccionCSS')
+                verseccioncss.style.display = "none"
+             let verseccionjavascript = document.getElementById('seccionjavascript')
+                verseccionjavascript.style.display = "none"
+                
+        
+            let botonHTML = document.getElementById('HTML')
+            botonHTML.addEventListener('click', parteHTML)
+        
+            let botonjavascript = document.getElementById('javascript')
+            botonjavascript.addEventListener('click', partejavascript)
+        
+            let botoncss = document.getElementById("css")
+            botoncss.addEventListener('click',partecss )
+
+            let botonback = document.getElementById("back")
+            botonback.addEventListener('click',parteback)
+
+            let botonalerta = document.getElementById("alerta")
+            botonalerta.addEventListener('click',partealerta)
+        
+        }
+        function partealerta(){
+            alert("profe pongame 5 porfis")
+        }
+        function parteback(){
+
+            location.reload()
+        }
+
+        function partecss(){
+        
+            
+        
+            let verseccioncss = document.getElementById('seccionCSS')
+                verseccioncss.style.display = "block"
+        
+        
+            let verseccionintro = document.getElementById("intro")
+                verseccionintro.style.display = "none"
+            
+       
+        }
+        
+        
+        
+        function parteHTML(){
+     
+            let verseccionhtml = document.getElementById('seccionHTML')
+                verseccionhtml.style.display = "block"
+        
+        
+            let verseccionintro = document.getElementById("intro")
+                verseccionintro.style.display = "none"
+               
+        
+        }
+        function partejavascript(){
+        
+            
+        
+            let verseccionjavascript = document.getElementById('seccionjavascript')
+                verseccionjavascript.style.display = "block"
+        
+        
+            let verseccionintro = document.getElementById("intro")
+                verseccionintro.style.display = "none"
+            
+        
+        
+         
+        
+        }
+        
+        window.addEventListener("load", inicio) 
+        </script> 
+        <style>
+            #pie{
+                background-color: rgb(3, 36, 2);
+                color: rgb(186, 246, 183);
+            }
+
+            #header{
+                background-color: rgb(45, 233, 45);
+                color: rgb(44, 46, 44);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+
+            p {
+                width: 800px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(36, 39, 36);
+
+            }
+
+            h1{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: rgb(4, 55, 4);
+                
+            }
+            
+
+
+        </style>
+      
+
+    </head>
+
+    <body style = "background-color: rgb(198, 237, 139);">
+        
+        <header id="header">programacion y desarrollo
+            <button style="margin: 10px; background-color: rgb(84, 250, 84);" id = "HTML">HTML</button>
+            <button style="margin: 10px; background-color: rgb(84, 250, 84)" id = "javascript">Javascript</button>
+            <button style="margin: 10px; background-color: rgb(84, 250, 84)" id = "css">css</button>
+        </header>
+        <section id="intro">
+
+        <h1>programacion</h1>
+        <p>La programación es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de tarea. Pero no solo la acción de escribir un código para que la computadora o el software lo ejecute.<br> a continuacion presento algunos lenguajes... </p>
+        
+            <button style="margin: 10px; background-color: rgb(84, 250, 84);" id = "HTML">HTML</button>
+            <button style="margin: 10px; background-color: rgb(84, 250, 84);" id = "javascript">Javascript</button>
+            <button style="margin: 10px; background-color: rgb(84, 250, 84);" id = "css">css</button>
+    
+        </section>
+        <section id="seccionHTML">
+            <article>
+
+                <h3>¿que es html?</h3>
+                <p style="width: 800px;">El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos (este lenguaje usa el menor y mayor que para sus etiquetas) ademas por lo poco que he experimentado este lenguaje es lenguaje que va acompañado con otros para poder dar un resultado mas satisfactorio como lo seria el css o el javascript los cuales le dan color e interactividad respectivamente</p>
+
+                </article>
+            <article>
+
+                <h3>Estructura</h3>
+                <p>Los documentos en html suelen tener una mismas estructura basica la cual inicia con la etiqueta "htmal"<br> y como si se tratara de una caja vamos a poner adentro otras dos etiquetas vitales para nuesta pagina las cuales son "head" y "body"</p>
+                <ul>
+                    <li>head:<br> <p>en esta etiqueta pondremos practicamente podo lo que no se vaya a ver en la pagina o por lo menos asi lo entendi yo ya que aqui pondremos cosas como el titulo de la pagina el cual es el que se ve en la pestaña del navegador (en este caso seria "Tegnologia") tamien podremos ponel otros lenguajes de programacion como lo seria con la etiqueta "script" y por ahora desconozco en el caso de css</p></li>
+                    <li>body:<br> <p>en esta etiqueta podremos basicamente todo lo que el usuario final va a ver tambien aqui ocurre toda la maquetacion que se vio en el material de apoyo de la semana 1 las etiquetas basica que puede haber dentro de esta etiqueta podrian ser
+                        <ul>
+
+                            <li>Section:<br><p style="width: 750px;">Como su nombre indica se usa para delimitar una seccion</p></li>
+                            <li>p:<br><p style="width: 750px;">se usa para escribir texto es basicamente un parrafo</p></li>
+                            <li><br>h1-6:<p style="width: 750px;">h y un numero del 1 al 6 es como un titulo o subtitulo dependiendo de el numero elejido siendo 1 el titulo mas importante y 6 el menos importante</p></li>
+                            <li><br>header:<p style="width: 750px;">es basicamente el encabezado</p></li>
+                            <li><br>footer<p style="width: 750px;">es un pie de pagina </p></li>
+            
+                        </ul></p></li>
+        
+                </ul>
+                <h4>Maquetacion HTML</h4>
+                <p>-proximamente-</p> 
+                
+                
+            </article>
+        </section>
+        <section id="seccionCSS">
+            <article>
+                <h3>CSS</h3>
+                <p>-aun no conozcosuficiente sobre css como para compartilo lo lamento-<br></p>
+                
+
+            </article>
+        </section>
+
+        <section id="seccionjavascript">
+            <h3>Javascript</h3>
+            <article>
+                <h4>¿Qué es y para qué sirve el JavaScript?</h4>
+                <p> JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más). por lo que basicamenteeste lenguaje le agregaria una interactividad a tu sitio web claro que no soy el mejor con este lenguaje por lo que por ahora no puedo hacer mucho mas que mostrar las etiquetas que conozcode este lenguaje.<br> </p>
+                <ul>
+
+                    <li>function<br><p style="width: 750px;"s>esta etiquetala veo como una especie de bolsa en la que guargass un codigo que usaras luego, para usarla solo pon:
+                        <br><br> function nombredefuncion (){<br><br>aca pondremos el codigo que querramos guardar y con solo invocar el nombre de la funcion este codigo iniciara<br><br>}</p></li>
+                    <li>let<br><p style="width: 750px;">Let sirve para declarar una variable en esta misma etiqueta podriamos ponerle un valor a la variable o simplemente declararla, asi se usa:<br><br>let nombredevariable</p></li>
+                    <li>if<br><p style="width: 750px;">if es basicamente un condicional el cual como dice pone una condicion que se debe de cumplir para ejecutar un codigo de no cumplirse el codig no se ejecutara, asi se escribe<br><br> if(condicion){<br><br>codigo<br><br>}</p></li>
+                    <li>alert<br><p style="width: 750px;">crea un mensaje emergente<button id = "alerta">alert</button><br>asi se usa<br><br> alert("texto")</p></li>
+                    <li>document.getelementbyid<br><p style="width: 750px;">-proximamente- </p></li>
+    
+                </ul></p></li>
+
+        </ul>
+
+
+        </ul>
+            
+            </article>
+
+            
+
+        </section>
+        <button style="margin: 70px; background-color: rgb(84, 250, 84);" id = "back">back</button>
+
+        
+        <footer id="pie">
+            <aside>
+                <img src="https://png.pngtree.com/png-clipart/20191122/original/pngtree-cat-face-line-icon-vector-png-image_5190289.jpg" align="right" style="width: 100px ; margin-right: 100px; background-color:  rgb(3, 36, 2);">
+                <h4>Estudiante</h4>
+                <p style="color:rgb(84, 250, 84)">Contacto a <a href="mailto: breynermoreno9@gmail.com">breynermoreno9@gmail.com</a></p>
+            
+            </aside>
+
+        
+        
+
+            Actividad desarrollada por Breyner Andres Rincon Moreno
+        </footer>
+
+    </body>
+
+
+</html>
